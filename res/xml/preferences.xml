@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="root_preference_screen">
+    <PreferenceCategory
+	        android:title="@string/restaurant_info" >
+	        <PreferenceScreen
+			    android:key="@string/key_restaurant_name"
+			    android:title="@string/restaurant_name"
+			    android:defaultValue="@string/default_restaurant_name"
+			    android:inputType="text" />
+	        <PreferenceScreen
+			    android:key="@string/key_restaurant_address"
+			    android:title="@string/restaurant_addr"
+			    android:defaultValue="@string/default_restaurant_addr"
+			    android:inputType="text" />
+	        
+	         <PreferenceScreen
+	        	android:key="@string/key_restaurant_type"
+			    android:title="@string/restaurant_type"
+			    android:id="@+id/restaurant_type"
+	        	android:defaultValue="Seafood" >
+	        </PreferenceScreen>
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+	    	android:title="@string/title_num_table_types" >
+	        <EditTextPreference
+		        android:defaultValue="4"
+		        android:enabled="true"
+		        android:key="@string/key_num_table_type"
+		        android:numeric="integer"
+		        android:selectAllOnFocus="true" >
+		        <!-- android:title="Number of table types"  -->
+		    </EditTextPreference>
+	 </PreferenceCategory>
+    
+    <PreferenceCategory
+	        android:title="@string/table_types"
+	        android:id="@+id/preference_category_tables_id"
+	        android:key="@string/key_preference_category_tables" >
+    </PreferenceCategory>
+</PreferenceScreen>

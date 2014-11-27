@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="table_type_color">#FF000000</color>
+    <color name="table_size_color">#FF000000</color>
+    <color name="table_count_color">#FF000000</color>
+    <color name="grayed_out_color">#808080</color>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Find-A-Table Restaurant</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- Buttons -->
+    <string name="button_up">Up</string>
+	<string name="button_down">Down</string>
+	<string name="button_reset">Reset</string>
+	
+	<!-- POST request -->
+	<string name="post_url">http://54.186.80.240/restaurant_receive.php</string>
+	
+	<!-- Keys -->
+	<string name="key_restaurant_id">restaurant_id</string>
+	<string name="key_authentication_token">authentication_token</string>
+	<string name="key_num_table_type">num_table_type</string>
+	<string name="key_restaurant_address">restaurant_address</string>
+	<string name="key_restaurant_name">restaurant_name</string>
+	<string name="key_restaurant_type">restaurant_type</string>
+	<string name="key_preference_category_tables">preference_category_tables</string>
+	<string name="key_root_preference_screen">root_preference_screen</string>
+	<string name="key_display">key_display</string>
+	<string name="key_table">key_table</string>
+	<string name="key_type">key_type</string>
+	<string name="key_size">key_size</string>
+	<string name="key_tot_cnt">key_tot_cnt</string>
+	<string name="key_np">key_np</string>
+	<string name="key_counter">key_counter</string>
+	<string name="key_button_up">key_button_up</string>
+	<string name="key_button_down">key_button_down</string>
+	
+	<!-- Titles -->
+	<string name="title_num_table_types">Number of table types</string>
+	<string name="restaurant_info">Restaurant Info</string>
+	<string name="table_types">Table Types</string>
+	<string name="restaurant_name">Restaurant Name</string>
+	<string name="restaurant_addr">Restaurant Address</string>
+	<string name="restaurant_type">Restaurant Type</string>
+	<string name="display_on_main_screen">Display on main screen</string>
+	<string name="table_type">Type</string>
+	<string name="table_size">Size</string>
+	<string name="click_to_set">Click to set</string>
+	<string name="tot_num_bar_stools">Total number of bar stools</string>
+	<string name="tot_cnt">Total number of tables</string>
+	
+	<!-- Subscreen titles -->
+	<string name="subscreen_category1">Main Screen</string>
+	<string name="subscreen_category2">Total number of tables</string>
+	<string name="subscreen_category3">Table information</string>
+	
+	<!-- Summaries -->
+	<string name="num_table_types">Number of table types</string>
+	<string name="checkbox_msg">This table already exists.</string>
+	<string name="table">Table</string>
+	<string name="default_restaurant_name">Default Restaurant Name</string>
+	<string name="default_restaurant_addr">123 Hello World St., Princeton, NJ 08544</string>
+	
+	
+	<!-- Dialog queries -->
+	<string name="ok">OK</string>
+	<string name="query_table_size">Please enter a number between 2 and 20.</string>
+	<string name="query_tot_cnt">Please enter the total number of tables of this type.</string>
+	<string name="dialog_num_table_type_max_message">Sorry, this application only supports up to 40 table types.</string>
+	<string name="dialog_num_table_type_max_title">Maximum number of tables exceeded</string>
+
+	<!-- Table types -->
+	<string name="table_type0">Table</string>
+	<string name="table_type1">Bar Stool</string>
+	<string name="table_type2">Booth</string>
+	<string name="table_type3">Outdoor</string>
+	
+    <string-array name="tabletypes">
+        <item>@string/table_type0</item>
+        <item>@string/table_type2</item>
+        <item>@string/table_type3</item>
+        <item>@string/table_type1</item>
+    </string-array>
+    <string-array name="listvalues">
+        <item>@string/table_type0</item>
+        <item>@string/table_type2</item>
+        <item>@string/table_type3</item>
+        <item>@string/table_type1</item>
+    </string-array> 
+</resources>

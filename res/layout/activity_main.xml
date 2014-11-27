@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    
+    <!-- <RelativeLayout
+        android:id="@+id/rlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+    	android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+	    <TextView
+	        android:id="@+id/restaurant_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="24sp" />
+	    <TextView
+	        android:id="@+id/restaurant_address"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/restaurant_name"
+	        android:textSize="12sp" />
+	  <View
+			android:layout_width="1dp"
+			android:layout_height="24dp"
+			android:layout_below="@+id/restaurant_address">
+		</View>
+    </RelativeLayout>-->
+    
+    <RelativeLayout 
+        android:id="@+id/rlayout2"
+	    android:layout_below="@+id/rlayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+       	<ScrollView
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:scrollbars="none">
+		    <LinearLayout
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:orientation="vertical">
+		        <TableLayout
+			        android:id="@+id/llayout"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center_vertical|center_horizontal"
+			        android:foregroundGravity="center"   
+			        android:layout_marginLeft="20dp"
+			        android:layout_marginRight="20dp"
+			        android:orientation="vertical" >
+		    	</TableLayout>
+			</LinearLayout>
+		</ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

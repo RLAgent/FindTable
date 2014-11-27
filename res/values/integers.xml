@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Constants -->
+    <integer name="num_table_type_min">0</integer>
+    <integer name="num_table_type_max">20</integer>
+    <integer name="table_size_bar">1</integer>
+    <integer name="table_size_min">2</integer>
+    <integer name="table_size_max">20</integer>
+    <integer name="table_size_default">4</integer>
+    <integer name="tot_cnt_min">0</integer>
+    <integer name="tot_cnt_max">255</integer>
+    <integer name="table_count_default">0</integer>
+    
+    <!-- RepeatListener -->
+    <integer name="init_interval">400</integer>
+    <integer name="normal_interval">100</integer>
+    
+    <!-- POST request -->
+    <integer name="unchecked_table">-1</integer>
+    <integer name="nonexistent_table">-2</integer>
+</resources>
