@@ -1,0 +1,7 @@
+first:
+
+SELECT restaurant_id FROM restaurant_data WHERE name="Witherspoon Grill";
+
+using the restaurant ID, type:
+
+INSERT INTO auth SET restaurant_id=66452,username="user@witherspoon",password=SHA1("grill");

@@ -1,0 +1,163 @@
+﻿<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>Find a Table project page</title>
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>Find a Table project page</h1>
+			<h2>Project description</h2>
+			<p>
+				It&rsquo;s 6:30 on Friday night, and you’re going out with a few friends, but most good restaurants are full. You can either call each restaurant
+				and ask how long the wait list is, or you can pull out Find a Table. We give you real-time information about which restaurants near you have
+				enough space to seat you or how long their wait lists are. Tap on a table to get detailed information about the restaurant
+				(prices, menus, reviews, and contact information).
+			</p><p>
+				This app aggregates data (reported by the restaurants) on the current number of openings or length of the wait line into a centralised database,
+				so that the user’s app can access the database and quickly see which restaurants are available for them at that moment.
+			</p><p>
+				We will create three apps: a desktop and a smartphone app for the customer, and a pure Android app for the restaurant. A customer inputs
+				a city (or uses <span class="sc">GPS</span>) and his party size, and the app returns a list of available restaurants, displayed either as
+				a sortable list, or else as pins on a map. The restaurant uses the simple and intuitive Restaurant App to update the number of open tables
+				as they turn over. 
+			</p>
+			
+			<h2>Projected timeline</h2>
+			<table>
+				<tr><th>21 March</th><td>
+						Have a working basic prototype set up (a server, Restaurant app, and Customer app that are able to communicate with one another).
+					</td>
+				</tr><tr>
+					<th>28 March</th>
+					<td>
+						Have all functionalities working for a presentable app (including the GUI, etc.), but with only all the major features
+						(i.e., things like, e.g., restaurant menu item search aren’t needed at this point), although the more working at this point the better.
+					</td>
+				</tr><tr>
+					<th>07 April</th>
+					<td>
+						Have the initial app thoroughly tested (e.g., through branch- and stress-testing) by this point, with all detected errors fixed.
+					</td>
+				</tr><tr>
+					<th>11 April</th>
+					<td>
+						Have the fixed version re-tested by this point. Release alpha version to testers. Ask testers to actively give feedback and questions
+						during this period.
+					</td>
+				</tr><tr>
+					<th>25 April</th>
+					<td>
+						Implement changes from alpha test by this point. Also implement any additional features we wanted to add that we left out March 28
+						by this point.
+					</td>
+				</tr><tr>
+					<th>02 May</th>
+					<td>
+						Test the alpha changes thoroughly by this point. Release beta version.
+					</td>
+				</tr><tr>
+					<th>14 May</th>
+					<td>
+						(Due date)
+					</td>
+				</tr>
+			</table>
+			
+			<h2>Completed tasks</h2>
+			<table>
+				<tr><th>03 Feb 2014</th><td>Project group formed. Set up git repository (on BitBucket).</td></tr>
+				<tr><th>20 Feb 2014</th><td>Confirmed idea for application by group concensus.</td></tr>
+				<tr><th>28 Feb 2014</th><td>Project meeting with Professor Kernighan.</td></tr>
+				<tr><th>06 Mar 2014</th><td>Completed initial layout mockups of the restaurant-side Android application.</td>
+				<tr><th>07 Mar 2014</th><td>Decided on method of reporting waitlist length.</td>
+				<tr><th>13 Mar 2014</th><td>Set up Amazon account for Ubuntu webserver instance.</td></tr>
+				<tr><th>14 Mar 2014</th><td>Completed design document.</td></tr>
+				<tr><th>21 Mar 2014</th><td>Set up Amazon S3 website. Set up auto-rsyncing with git repository.</td></tr>
+				<tr><th>22 Mar 2014</th><td>Created initial webpages (homepage, timeline, etc.).</td></tr>
+				<tr><th>01 Apr 2014</th><td>
+					Implemented counter increments and decrements in restaurant application. Successfully made POST requests to server.
+				</td></tr>
+				<tr><th>02 Apr 2014</th><td>Purchased domain names.</td></tr>
+				<tr><th>03 Apr 2014</th><td>Restaurant application now dynamically creates increment/decrement buttons in the main activity.</td></tr>
+				<tr><th>07 Apr 2014</th><td>Released survey for data on relative reservation frequencies.</td></tr>
+				<tr><th>09 Apr 2014</th><td>
+					Implemented server-side POST request listener in PHP that updates the MySQL database. Restaurant application now successfully makes
+					POST requests on counter increments and decrements. The two sides are able to successfully communicate such that the application
+					properly updates the data in the database.
+				</td></tr>
+				<tr><th>10 Apr 2014</th><td>
+					Settings fragment successfully added to restaurant application. Users now has the ability to edit restaurant information, the number of
+					table types, and specific options for tables (size, type, etc.)
+				</td></tr>
+				<tr><th>13 Apr 2014</th><td>Obtained Google Maps API key, and began implementing map support for the customer application.</td></tr>
+				<tr><th>15 Apr 2014</th><td>
+					Restaurant application data is now persistent between distinct runs. Settings page updated to dynamically display a number of table types
+					corresponding to the value of the &ldquo;Number of table types&rdquo; setting.
+				</td></tr>
+				<tr><th>16 Apr 2014</th><td>Migrated restaurant application main screen layout to ListLayout.</td></tr>
+				<tr><th>17 Apr 2014</th><td>Android PhoneGap wrapper app is live (for the customer application).</td></tr>
+				<tr><th>18 Apr 2014</th><td>
+					Restaurant application now supports Android tablet. Consequently, Android phone support will be revoked. iPhone PhoneGap wrapper app
+					is live (for the customer application). Support for iPhone will be limited: Android will be the target operating system. Server software
+					updated, and security and software compatibility holes patched.
+				</td></tr>
+				<tr><th>24 Apr 2014</th><td>Yelp restaurant data successfully scraped en masse (67338 restaurants in the United States).</td></tr>
+				<tr><th>06 May 2014</th><td>Restaurant application modified to open settings page on first run.</td></tr>
+				<tr><th>07 May 2014</th><td>Major bug fixes in all aspects of project (too many to list).</td></tr>
+				<tr><th>08 May 2014</th><td>Back button now properly implemented and supported in customer application.</td></tr>
+				<tr><th>10 May 2014</th><td>Map and list pages in customer application consolidated into one page with a toggle button.</td></tr>
+				<tr><th>11 May 2014</th><td>Major map display bug in customer application resolved.</td></tr>
+				<tr><th>13 May 2014</th><td>
+					Completed authentication support. Released alpha test to closed group of testers and implemented all relevant bug fixes.
+				</td></tr>
+			</table>
+			
+			<h2>To-do list</h2>
+			<ul>
+				<li>Install LAMP on Amazon site.</li>
+				<li>Create database and write associated code</li>
+				<ul>
+					<li>Design database</li>
+					<li>Write server code to update database (in Django)</li>
+					<li>Write server functions that are called by Restaurant App</li>
+					<li>Write server functions that are called by Customer App</li>
+					<li>Server-side authentication</li>
+				</ul>
+				
+				<li>Write Customer-server code</li>
+				<ul>
+					<li>Write (Django/Python) code to generate <span class="sc">HTML</span> for Custumer app</li>
+					<li>Use Ajax to allow dynamic updating</li>
+					<li>Style with <span class="sc">CSS</span></li>
+					<li>Edit it for additional use on desktop browsers</li>
+				</ul>
+				
+				<li>Customer App (web app)</li>
+				<ul>
+					<li>Make Android wrapper-app (enable <span class="sc">GPS</span>, integrate Maps)</li>
+					<li>Web app</li>
+					<li>Desktop version</li>
+				</ul>
+				
+				<li>Restaurant App (native Android app)</li>
+				<ul>
+					<li>Make Android native app</li>
+					<li>Authentication client-side</li>
+					<li>Make the complex layout-designer tool</li>
+				</ul>
+				
+				<li>Figure out how to use the Yelp API &ndash; Javascript written by Customer-server and executed on phone</li>
+			</ul>
+			
+			<h2>Readme</h2>
+			<a href="readme">Here</a>
+			
+			<!--
+			<h2>Changelog</h2>
+			<a href="changelog">Here</a>
+			-->
+		</div>
+	</body>
+</html>

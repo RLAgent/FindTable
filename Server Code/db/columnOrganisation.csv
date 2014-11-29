@@ -1,0 +1,11 @@
+Col,Data
+1,UID (md5 a bunch of relevant concatenated data, I'd recommend, with some collision handling)
+2,Restaurant name
+3,Price range
+4,Restaurant type(s)
+5,Rating
+6,Location
+7,Menu (serialised data structure?)
+8,Waitlist length
+9,Num open tables of type X
+...,...

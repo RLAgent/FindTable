@@ -1,0 +1,37 @@
+body { font: 12pt/2em Georgia; }
+div#wrapper {
+	max-width: 60em;
+	margin: auto;
+}
+h1 {
+	margin-bottom: 2em;
+	font-weight: normal;
+	font-style: italic;
+}
+h2 {
+	margin-top: 1.5em;
+	margin-bottom: .5em;
+	font-weight: normal;
+	text-transform: lowercase;
+	font-variant: small-caps;
+	letter-spacing: .15em;
+}
+tr > td { padding-bottom: 1em; }
+th {
+	font-weight: normal;
+	font-style: italic;
+	width: 6pc;
+	vertical-align: top;
+	text-align: left;
+}
+td {	padding-left:3pc; }
+:not(ul)>ul {	padding: 0; }
+p {
+	margin: 0;
+	max-width: 60pc;
+}
+p+p { text-indent: 1.5em }
+span.sc {
+	text-transform: lowercase;
+	font-variant: small-caps;
+}
